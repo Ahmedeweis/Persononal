@@ -5,14 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Ahmed - Expert Front-End Engineer specializing in Vue.js, performance optimization, and accessible web design.">
-  <title>Ahmed | Front-End Engineering Expert</title>
+    content="Ahmed Kaseh - Expert Front-End Engineer specializing in Vue.js, performance optimization, and accessible web design.">
+  <title>Ahmed Kaseh | Front-End Engineering Expert</title>
+
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
   <style>
-    /* - High Contrast for Accessibility (WCAG AAA compliant)
-           - Fast rendering with system fonts
-        */
     body {
       font-family: system-ui, -apple-system, sans-serif;
       background-color: #000000;
@@ -20,9 +19,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     .card {
@@ -31,6 +30,7 @@
       border: 3px solid #38bdf8;
       border-radius: 16px;
       max-width: 500px;
+      margin: 20px;
     }
 
     h1 {
@@ -41,8 +41,36 @@
 
     p {
       color: #ffffff;
-      /* Pure white for 100% accessibility score */
       font-size: 1.25rem;
+      margin-bottom: 24px;
+    }
+
+    .links-container {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .link-item {
+      color: #38bdf8;
+      text-decoration: none;
+      border: 2px solid #38bdf8;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: all 0.2s ease-in-out;
+      font-weight: 600;
+      /* لضمان سهولة الضغط بالأصابع على الموبايل */
+      min-width: 100px;
+    }
+
+    /* تحسين الـ Focus لمستخدمي الكيبورد (مهم جداً للسكور) */
+    .link-item:hover,
+    .link-item:focus {
+      background-color: #38bdf8;
+      color: #000000;
+      outline: 3px solid #ffffff;
+      outline-offset: 4px;
     }
   </style>
 </head>
@@ -51,6 +79,12 @@
   <main class="card">
     <h1>Ahmed Kaseh</h1>
     <p>Front-End Engineer specializing in high-performance web applications and clean code architectures.</p>
+
+    <nav class="links-container" aria-label="Social and contact links">
+      <a href="https://github.com/ahmed-kaseh" class="link-item" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/ahmed-kaseh" class="link-item" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:contact@ahmedkaseh.com" class="link-item">Email Me</a>
+    </nav>
   </main>
 </body>
 
